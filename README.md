@@ -18,10 +18,6 @@ Este é um projeto simples de uma pizzaria, desenvolvido como atividade em grupo
 - ✅ Seleção de opções com **soma dos valores**
 - ✅ Apresentação de **resumo do pedido final**
 
-## 👥 Grupo
-
-Projeto realizado por um grupo de 3 alunos.
-
 ## 📦 Finalização
 
 Projeto concluído com commit e push para o GitHub. ✅
