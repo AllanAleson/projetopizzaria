@@ -29,6 +29,14 @@
         total += parseInt(preco);
       });
     }
+    // borda recheada
+    if (params.getAll("borda")) {
+      params.getAll("borda").forEach(item => {
+        let [nome, preco] = item.split("-");
+        resumo += `<li>borda ${nome} + R$${preco}</li>`;
+        total += parseInt(preco);
+      });
+    }
 
     // Bebidas
     if (params.getAll("bebida")) {
