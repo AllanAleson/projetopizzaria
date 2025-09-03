@@ -10,7 +10,7 @@ Este é um projeto simples de uma pizzaria, desenvolvido como atividade em grupo
 
 ## ⚙️ Funcionalidades
 
-- ✅ Executado na porta `45000`
+- ✅ Executado na porta `4500`
 - ✅ Transmissão de dados entre páginas HTML
 - ✅ Formulário com:
   - `checkbox` para adicionais

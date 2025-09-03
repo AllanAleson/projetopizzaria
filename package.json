@@ -9,8 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Este é um projeto simples de uma pizzaria, desenvolvido como atividade em grupo para prática de HTML e JavaScript. O sistema simula um pedido de pizza com cardápio, seleção de opções e cálculo de valores.",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "devDependencies": {}
 }
