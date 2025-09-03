@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio</title>
+</head>
+<body>
+  <h1>Monte seu Pedido</h1>
+  <form action="/pedido.html" method="get">
+    
+    <h2>Tamanho da Pizza</h2>
+    <input type="radio" name="tamanho" value="Pequena-30" required> Pequena - R$30 <br>
+    <input type="radio" name="tamanho" value="Média-40"> Média - R$40 <br>
+    <input type="radio" name="tamanho" value="Grande-50"> Grande - R$50 <br>
+
+    <h2>Sabores (escolha quantos quiser)</h2>
+    <input type="checkbox" name="sabor" value="Calabresa-5"> Calabresa +R$5 <br>
+    <input type="checkbox" name="sabor" value="Frango-7"> Frango +R$7 <br>
+    <input type="checkbox" name="sabor" value="Portuguesa-8"> Portuguesa +R$8 <br>
+
+    <h2>Bebida</h2>
+    <input type="checkbox" name="bebida" value="Coca-10"> Coca-Cola +R$10 <br>
+    <input type="checkbox" name="bebida" value="Suco-8"> Suco +R$8 <br>
+
+    <br>
+    <button type="submit">Finalizar Pedido</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Resumo do Pedido</title>
+</head>
+<body>
+  <h1>Resumo do Pedido</h1>
+  <div id="resumo"></div>
+
+  <script>
+    // Pegar query string da URL
+    const params = new URLSearchParams(window.location.search);
+    let total = 0;
+    let resumo = "<ul>";
+
+    // Tamanho
+    if (params.get("tamanho")) {
+      let [nome, preco] = params.get("tamanho").split("-");
+      resumo += `<li>Pizza ${nome} - R$${preco}</li>`;
+      total += parseInt(preco);
+    }
+
+    // Sabores (pode ter vários)
+    if (params.getAll("sabor")) {
+      params.getAll("sabor").forEach(item => {
+        let [nome, preco] = item.split("-");
+        resumo += `<li>Sabor ${nome} + R$${preco}</li>`;
+        total += parseInt(preco);
+      });
+    }
+
+    // Bebidas
+    if (params.getAll("bebida")) {
+      params.getAll("bebida").forEach(item => {
+        let [nome, preco] = item.split("-");
+        resumo += `<li>Bebida ${nome} + R$${preco}</li>`;
+        total += parseInt(preco);
+      });
+    }
+
+    resumo += "</ul>";
+    resumo += `<h2>Total: R$${total}</h2>`;
+
+    document.getElementById("resumo").innerHTML = resumo;
+  </script>
+</body>
+</html>
